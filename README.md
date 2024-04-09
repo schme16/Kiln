@@ -1,4 +1,4 @@
-# Kiln
+# Kiln Manager
 
 ### Note: Although many base features are finished, the UI is still a little ways off, but this is being worked on quite rapidly, so be sure to star and check back later!
 
