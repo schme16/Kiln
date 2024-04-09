@@ -9,14 +9,14 @@
 	<!--Scripts-->
 	<script src="/node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="/node_modules/angular/angular.min.js"></script>
-	<script src="/utilities.js"></script>
 
 	<!--The title-->
 	<title>Kiln Manager</title>
-	
+
 </head>
 <body ng-cloak>
 
+<div class="page page-{{$root.page}}" ng-include="'sys/pages/' + ($root.page || 'home') + '.html'"></div>
 
 <script src="sys/js/main.js"></script>
 </body>

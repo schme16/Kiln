@@ -4,6 +4,8 @@ angular.module('Kiln Manager', [])
 	.controller('master', ($scope, $sce) => {
 		m = $scope
 
+		m.$root.page = 'home'
+
 		//Trust a string as rendereable HTML
 		m.trustAsHtml = $sce.trustAsHtml
 

@@ -238,6 +238,7 @@ app.get('/api', (req, res) => {
 
 })
 
+app.use(express.static(`${__dirname}/public`))
 //Start the webserver
 app.listen(port, () => {
 	console.log(`Kiln controller started on port:`, port)

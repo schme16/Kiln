@@ -1,4 +1,7 @@
-﻿module.exports = (cs = 4, sck = 24, so = 25, units = 1) => {
+﻿/*
+	 This is the abstraction module for the MAX6675 thermocouple
+*/
+module.exports = (cs = 4, sck = 24, so = 25, units = 1) => {
 
 	let config = {//Set up the thermocouple
 			max6675: new (require("max6675-raspi"))(cs, sck, so, units),

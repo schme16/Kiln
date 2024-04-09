@@ -7,12 +7,13 @@ A PID based kiln manager, written in Javascript (NodeJS), designed for deploymen
 ## Features:
 
 - [ ] Clean web based UI, designed with 5" & 7" touch screens in mind
-- [ ] Heating device agnostic, allowing the use of mechanical relays, mosfets, igbts, SSRs, etc
+- [ ] Heating device agnostic, allowing the use of mechanical relays, mosfets, igbts, SSRs, etc (You could even use a electronic gas valvue on a gas kiln!)
 - [x] Modulare thermometer design, allowing you to easily integrate wehatever temperature sensors you want
 - [x] Adjustable PID control to keep the kiln temps rock steady
 - [ ] Ability to add soak times
 - [ ] Ability to schedule firings
 - [ ] Temperature/hr ramp profiles (default is 180C/hr)
+- [ ] Per firing temperature loggin, with a clear and readable chart
 - [ ] Built in bisque, and glaze profiles, as well as the ability to add new ones.
 - [x] Open source, so new features can be suggested and and even provided!
 
