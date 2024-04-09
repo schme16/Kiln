@@ -1,0 +1,33 @@
+/*
+	   __  _______ ____      ____  ___   _____ ______
+	  / / / / ___// __ \    / __ )/   | / ___// ____/
+	 / / / /\__ \/ / / /   / __  / /| | \__ \/ __/
+	/ /_/ /___/ / /_/ /   / /_/ / ___ |___/ / /___
+	\____//____/\___\_\  /_____/_/  |_/____/_____/
+
+	   _____________  ____    ___________
+	  / ___/_  __/\ \/ / /   / ____/ ___/
+	  \__ \ / /    \  / /   / __/  \__ \
+	 ___/ // /     / / /___/ /___ ___/ /
+	/____//_/     /_/_____/_____//____/
+
+
+*/
+
+@import url(/styles/ilar-global-styles.min.css);
+
+html,
+body {
+	background: #fff;
+	color: #808080;
+	font-size: 16px;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
