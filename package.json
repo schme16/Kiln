@@ -24,6 +24,7 @@
     "normalize.css": "^8.0.1",
     "onoff": "^6.0.3",
     "pid-controller": "github:lkspencer/pid-controller",
-    "serialport": "^12.0.0"
+    "serialport": "^12.0.0",
+    "socket.io": "^4.7.5"
   }
 }

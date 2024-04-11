@@ -1,0 +1,9 @@
+{
+	"watch": [
+		"thermometers",
+		"index.js",
+		"userConfig.json",
+		"package.json",
+		"firing-presets"
+	]
+}

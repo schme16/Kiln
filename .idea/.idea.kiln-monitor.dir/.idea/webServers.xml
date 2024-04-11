@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="bfa53bc9-6ebb-4f3b-8ed5-70e44b1e84bf" name="pi" url="http://192.168.1.11">
+        <fileTransfer rootFolder="/home/schme16/" accessType="SFTP" host="192.168.1.11" port="22" sshConfigId="3b7f5a93-a7be-4325-92aa-463df38acca5" sshConfig="schme16@192.168.1.11:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" isUseSudo="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

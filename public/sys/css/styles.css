@@ -1,8 +1,19 @@
 /*Kiln Manager*/
+:root {
+	--colour-1: #BFA77A;
+	--colour-2: #F2A950;
+	--colour-3: #8C6645;
+	--colour-4: #402F21;
+	--colour-5: #BF4D34;
+}
+
+/* Color Theme Swatches in Hex */
+
+
 html,
 body {
-	background: #fff;
-	color: #e1e1e1;
+	background: var(--colour-4);
+	color: var(--colour-1);
 	font-size: 16px;
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	height: auto;
@@ -11,3 +22,88 @@ body {
 	box-sizing: border-box;
 	overflow: hidden;
 }
+
+.home-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.home-temp {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-size: 120px;
+	font-weight: bold;
+	-webkit-text-stroke: 4px var(--colour-3);
+}
+
+.home-buttons-wrapper {
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.page.page-home {
+	padding: 40px;
+	width: calc(100vw - 80px);
+	height: calc(100vh - 80px);
+}
+
+.page.page-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colour-4);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out;
+    font-size: 160px;
+    user-select: none;
+    /* filter: brightness(0.75); */
+}
+
+.page.page-loading.show-loading {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.home-button {
+    width: calc(50% - 22px);
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--colour-3);
+    border-radius: 6px;
+    margin: 10px;
+    text-align: center;
+    line-height: 1.2;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: #402f21;
+    transition: all 250ms ease-in-out;
+    user-select: none;
+}
+
+.home-button:hover {background-color: #5f4631;}
