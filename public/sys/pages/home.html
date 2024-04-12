@@ -1,7 +1,16 @@
 ﻿<div class="home-wrapper">
-	<div class="home-temp">{{temp}}</div>
+	<div class="home-temp">
+		<div class="home-current-temp">{{temp}}</div>
+		<hr class="home-temp-divider">
+		<div class="home-setpoint-temp">{{target}}</div>
+	</div>
 	<div class="home-buttons-wrapper">
-		<div class="home-button button-{{button.title.toLowerCase().replaceAll(' ', '_').replaceAll('(', '').replaceAll(')', '')}}" ng-repeat="button in presets" ng-bind-html="trustAsHtml(button.title.replace('(', '<br>('))"></div>
+		<div
+				class="home-button button-{{button.title.toLowerCase().replaceAll(' ', '_').replaceAll('(', '').replaceAll(')', '')}}"
+				ng-repeat="button in presets track by $index"
+				ng-bind-html="trustAsHtml(button.title.replace('(', '<br>('))"
+				ng-click="startPreset(button)"
+		></div>
 	</div>
 </div>
 

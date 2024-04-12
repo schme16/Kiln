@@ -53,13 +53,15 @@ angular.module('Kiln Manager', [])
 
 
 				m.temp = Math.floor(m.config.input)
+				m.setpoint = Math.floor(m.config.setpoint)
+				m.target = Math.floor(m.config.target)
 				m.$applyAsync()
 			})
 		})
 
 
 		m.api = (action, data) => {
-			return m.socket.emit('api', {action: action, data: data})
+			return m.socket.emit('api', {action: action, data: JSON.parse(angular.toJson(data))})
 		}
 
 		m.fToC = (f) => {
@@ -70,6 +72,20 @@ angular.module('Kiln Manager', [])
 			return (c * 9 / 5) + 32
 		}
 
+		m.startPreset = (preset, force = false) => {
+			if (!!preset) {
+				
+				if (!!force) {
+					m.api('startPreset', preset)
+				}
+				else {
+					let check = confirm(`Are you sure you want to start this preset: ${preset.title}`)
+					if (!!check) {
+						m.startPreset(preset, true)
+					}
+				}
+			}
+		}
 
 		//Trust a string as rendereable HTML
 		m.trustAsHtml = $sce.trustAsHtml
