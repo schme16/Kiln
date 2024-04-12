@@ -164,6 +164,9 @@ let fs = require('fs'),
 				//Reset the setpoint to 0
 				config.setpoint = 0
 
+				//Reset the setpoint to 0
+				config.target = 0
+
 				//Reset the current firing
 				config.currentFiring = {
 					preset: false,
